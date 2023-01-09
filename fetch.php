@@ -1,3 +1,4 @@
+// Program to fetch data From database 
 <?php
 $servername = "localhost:3307";
 $username = "root";
@@ -31,7 +32,6 @@ table, td, th, tr {
         </th>
         <?php 
 $sql='SELECT * FROM first.train';
-// $sql = "SELECT * FROM 'train'";
 $run = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_array($run)) {
         ?>
