@@ -1,3 +1,4 @@
+// Register form using php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,18 +19,6 @@ if($_POST){
       $phone=$_POST['phone_number'];
       $pass=$_POST['password'];
       $sql= "INSERT INTO train (`email`,`phone`,`Password`) VALUES ('$email','$phone','$pass')";
-        // $sql="INSERT INTO training ('email', 'phone', 'Password') VALUES ('$email','$phone','$pass')";
-        // $sql= "INSERT INTO 'training'('E-mail','Phone','Password') VALUES($email,$phone,$pass)";
-      // $run = mysqli_query($conn,$sql);
-      // if ($run) {
-      //   echo '<script>
-      //   alert('data inserted');
-      //   </script>';
-      // }else{
-      //   echo '<script>
-      //   alert('data not inserted');
-      //   </script>';
-      // }
       }
    ?>
 <body>
