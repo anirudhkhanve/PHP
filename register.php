@@ -19,6 +19,7 @@ if($_POST){
       $phone=$_POST['phone_number'];
       $pass=$_POST['password'];
       $sql= "INSERT INTO train (`email`,`phone`,`Password`) VALUES ('$email','$phone','$pass')";
+      $run = mysqli_query($conn,$sql);
       }
    ?>
 <body>
